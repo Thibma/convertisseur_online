@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network location
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,13 +9,26 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    calendarmanager.cpp \
+    conversion.cpp \
+    drone.cpp \
+    dronevalue.cpp \
+    loginform.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    network.cpp
 
 HEADERS += \
-    mainwindow.h
+    calendarmanager.h \
+    conversion.h \
+    drone.h \
+    dronevalue.h \
+    loginform.h \
+    mainwindow.h \
+    network.h
 
 FORMS += \
+    loginform.ui \
     mainwindow.ui
 
 # Default rules for deployment.
